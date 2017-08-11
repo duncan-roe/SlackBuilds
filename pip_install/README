@@ -1,0 +1,46 @@
+pip_install (Make SlackBuild of any package in PyPI)
+
+pip_install builds a Slackware install file from any package archive
+fetched from PyPI (the Python Package Index, analogous to perl's CPAN).
+PyPI is at https://pypi.python.org/pypi
+
+By default, pip_install will build the most recently modified package
+file or symlink in the current directory (tar.gz, tar.bz2 &c, tar or
+zip). To build a specific package:
+
+  PACKAGE=<package_path> ./pip_install.SlackBuild
+
+Here, <package_path> can be any path: the package file does not have to
+reside in the SlackBuild directory.
+
+pip_install suppresses pip's normal dependency tracking to build an
+install of a single package. To check whether a package has any
+unsatisfied dependencies, first install the newly built package and then
+use the optional dependency pipdeptree:
+
+  pipdeptree -p .
+
+This will show all unsatisfied dependencies. If there are none, it just
+outputs a blank line. New unsatisfied dependencies may appear as you
+install more packages. (This works well if you download packages to the
+pip_install directory: simply re-run pip_install.SlackBuild after
+fetching each package, install the new package, and re-run pipdeptree).
+
+PYTHON 3
+
+If you have installed python3 you will have pip3 available. To build a
+python3 Slackware install:
+
+  PIP=PIP3 ./pip_install.SlackBuild
+
+alternatively
+
+  export PIP=PIP3
+
+and run pip_install.SlackBuild as often as you have to.
+
+The built packages contain the pip version used to make them in their
+tag, e.g. Flask-Security-3.0.0-x86_64-1_pip2_SBo.tgz. So pip2 and pip3
+packages can coexist (but upgradepkg does not understand this). If a
+package puts programs in /usr/bin, you get whichever python version you
+installed last.

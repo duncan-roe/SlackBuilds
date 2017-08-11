@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+           |-----handy-ruler------------------------------------------------------|
+pip_install: pip_install (Make SlackBuild of any package in PyPI)
+pip_install:
+pip_install: pip_install builds a Slackware install file from any package archive
+pip_install: fetched from PyPI (the Python Package Index, analogous to perl's
+pip_install: CPAN). PyPI is at https://pypi.python.org/pypi
+pip_install: 
+pip_install: Follow the instructions in README when using this (meta-) SlackBuild.
+pip_install:
+pip_install:
+pip_install:
+pip_install:
