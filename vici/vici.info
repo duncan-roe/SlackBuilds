@@ -1,0 +1,10 @@
+PRGNAM="vici"
+VERSION="0.10.169"
+HOMEPAGE="https://ocratato-vici.sourceforge.io/"
+DOWNLOAD="https://sourceforge.net/projects/ocratato-vici/files/vici-0.10.689.tar.gz"
+MD5SUM="bdec70174d445e057902c8b5ab6c7b5d"
+DOWNLOAD_x86_64=
+MD5SUM_x86_64=
+REQUIRES="lua"
+MAINTAINER="Duncan Roe"
+EMAIL="duncan_roe@optusnet.com.au"

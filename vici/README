@@ -1,0 +1,11 @@
+vici (create a UNIX script using a flow chart interface)
+
+Vici aims to make the UNIX command line programs easily available to
+the users of Linux GUI desktop environments.
+The script supports all Linux commands, pipelines, file redirection,
+variables, functions, and multiple threads of control.
+Feedback
+If you want to assist in the development of VICI please use the
+Discussion area on the home page.
+For general comments and questions please use the Fedora Forum thread
+(under External Links).

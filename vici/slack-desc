@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+    |-----handy-ruler------------------------------------------------------|
+vici: vici (create a UNIX script using a flow chart interface)
+vici:
+vici: Vici aims to make the UNIX command line programs easily available to
+vici: the users of Linux GUI desktop environments.
+vici: The script supports all Linux commands, pipelines, file redirection,
+vici: variables, functions, and multiple threads of control.
+vici: home page https://sourceforge.net/projects/ocratato-vici/
+vici: If you want to assist in the development of VICI please use the
+vici: Discussion area on the home page.
+vici: For general comments and questions please use the Fedora Forum thread
+vici: (under External Links).
