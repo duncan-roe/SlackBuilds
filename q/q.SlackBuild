@@ -24,7 +24,7 @@ set -x
 
 PRGNAM=q
 VERSION=${VERSION:-$(echo $PRGNAM-*.tar.?z*|rev|cut -f 3- -d.|cut -f1 -d-|rev)}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_DRbuilds}
 
 if [ -z "$ARCH" ]; then
@@ -74,9 +74,9 @@ find -L . \
 # There's no ./config: just give everything to *make*.
 # To avoid duplication, do a *make install* directly
 
-make DESTDIR=$PKG \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
+make DESTDIR=$PKG \
 MANDIR=/usr/man \
 PREFIX=/usr \
 DOCDIR=/usr/doc \
