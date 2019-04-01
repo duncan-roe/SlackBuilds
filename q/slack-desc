@@ -16,4 +16,4 @@ q: Q macros can be written to act like subroutines or even functions.
 q: On starting freshly installed Q, you get a default macro set.
 q: There's no need to learn a special language to write macros, just the
 q: N-NEWMACRO command.
-q: Home page: https://github.com/duncan-roe/q
+q: Home page: https://github.com/duncan-roe/q/
