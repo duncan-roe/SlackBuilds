@@ -24,7 +24,7 @@ set -x
 
 PRGNAM=q
 VERSION=${VERSION:-$(echo $PRGNAM-*.tar.?z*|rev|cut -f 3- -d.|cut -f1 -d-|rev)}
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_DRbuilds}
 
 if [ -z "$ARCH" ]; then
@@ -40,8 +40,6 @@ TMP=${TMP:-/tmp/DRbuilds}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-# No optimising (leave debug on) (yes I know you can debug with -O2)
-
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
@@ -55,6 +53,7 @@ else
   SLKCFLAGS=""
   LIBDIRSUFFIX=""
 fi
+SLKCFLAGS="$SLKCFLAGS -O2"
 
 set -e
 
