@@ -1,3 +1,5 @@
 RCS
 *~
 *.?z*
+.qrc
+etc
