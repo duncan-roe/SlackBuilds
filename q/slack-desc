@@ -8,12 +8,12 @@
  |-----handy-ruler------------------------------------------------------|
 q: q (line-orientated WYSIWYG editor with a powerful macro facility)
 q:
-q: Q is a command-line-driven, line-oriented editor. In Q, you are
-q: always editing a line: either the next command or a line from the file
-q: being edited. Either way, almost all control characters perform some
-q: editing function. Q is big on minimising typing.
-q: Q macros can be written to act like subroutines or even functions.
+q: Q is a command-line-driven, line-oriented editor with a powerful macro
+q: facility. Q is always editing a line: either the next command or a
+q: line from the file being edited. Either way, almost all control
+q: characters perform some editing function. A rich set of pseudo-macros
+q: enables macros to act like subroutines, perform tests and much more.
 q: On starting freshly installed Q, you get a default macro set.
-q: There's no need to learn a special language to write macros, just the
-q: N-NEWMACRO command.
 q: Home page: https://github.com/duncan-roe/q/
+q:
+q:
